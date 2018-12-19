@@ -154,3 +154,176 @@
 		}
 	}
 }
+
+.rvr_delivery_lists	{
+	padding-bottom: 15px;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 30px;
+	.single-list {
+		margin-bottom: 15px;
+		h3 {
+			font-size: 14px;
+			text-transform: uppercase;
+			padding-left: 30px;
+			position: relative;
+			margin-bottom: 15px;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				background: url('../../images/sprite.png') 0 0 no-repeat;
+			}
+			&.self_delivery {
+				&:before {
+					width: 23px;
+					height: 21px;
+					background-position: 0px -25px;
+				}
+			}
+			&.ua_delivery {
+				&:before {
+					width: 17px;
+					height: 17px;
+					background-position: -4px -49px;
+				}
+			}
+			&.world_delivery {
+				&:before {
+					width: 16px;
+					height: 16px;
+					background-position: -4px -71px;
+				}
+			}
+		}
+		ul {
+			padding: 0 0 0 32px;
+			margin: 0;
+			li {
+				list-style-type: disc;
+				font-size: 14px;
+			}
+		}
+	}	
+}
+
+.rvr_mini-title {
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 15px;
+    line-height: 14px;
+}
+
+.rvr_info_links {
+	padding: 0;
+	margin: 0;
+	columns: 2;
+	padding-bottom: 30px;
+	border-bottom: 2px solid #ddd;
+	li {
+		list-style-type: none;
+		a {
+			color: #c5933b;
+			text-decoration: underline;
+			&:hover {
+				border: none;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.rvr_payment_info {
+	font-size: 14px;
+	border-bottom: 2px solid #eee;
+	.rvr_mini-title {
+		text-align: center;
+		margin-bottom: 35px;
+		margin-top: 35px;
+	}
+	.rvr_payment_items {
+		.item {
+			margin-bottom: 25px;
+			.item-title {
+				margin-bottom: 10px;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+			ul {
+				li {
+					display: block;
+					margin-bottom: 3px;
+					font-size: 14px;
+				}
+			}
+			&.rvr_online_payment {
+				.item-title {
+					margin-bottom: 40px;
+				}
+				.payment_desc {
+					p {
+						font-size: 13px;
+						line-height: 20px;
+						padding-bottom: 10px;
+					}
+				}
+			}
+			.rvr_payment_methods {
+				.single {
+					padding: 0 0 30px 0;
+					margin: 30px 0 0 0;
+					border-bottom: 1px dashed #eee;
+					font-weight: 500;
+					&:first-child {
+						margin-top: 0;
+					}
+					img {
+						display: block;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+.rvr_delivery_info {
+	padding-bottom: 30px;
+	border-bottom: 2px solid #eee;
+	.rvr_mini-title {
+		text-align: center;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+		margin-top: 30px;
+	}
+	.flex-row {
+		display: flex;
+		.item {
+			width: 33.3%;
+			text-align: center;
+			font-size: 14px;
+			.image-holder {
+				margin-bottom: 25px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.rvr_work_with {
+	padding-bottom: 35px;
+	border-bottom: 2px solid #eee;
+	.rvr_mini-title {
+		text-transform: uppercase;
+		margin: 50px 0;
+		text-align: center;
+	}
+	ul {
+		columns: 4;
+		li {
+			margin-bottom: 35px;
+		}
+	}
+}

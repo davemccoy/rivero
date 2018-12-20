@@ -369,3 +369,156 @@
 		}
 	}
 }
+.rvr_founders {
+	color: #000;
+	font-size: 14px;
+	padding-bottom: 35px;
+	margin-bottom: 75px;
+	border-bottom: 2px solid #eee;
+	.founders-text {
+		font-size: 14px;
+		margin-top: 45px;
+		line-height: 17px;
+	}
+	figure {
+		img {
+			max-width: 100%;
+		}
+		figcaption {
+			display: block;
+			margin-top: 25px;
+			text-align: center;
+			font-size: 14px;
+			line-height: 17px;
+			color: #000;
+			span {
+				display: block;
+				text-align: center;
+				color: #858585;
+			}
+		}
+	}
+}
+
+.rvr-founder-desc {
+	font-size: 14px;
+	line-height: 17px;
+	color: #000;
+	figure {
+		text-align: center;
+		margin-bottom: 30px;
+		img {
+			max-width: 100%;
+		}
+		figcaption {
+			display: block;
+			margin-top: 25px;
+			text-align: center;
+			font-size: 14px;
+			line-height: 17px;
+			color: #000;
+			span {
+				display: block;
+				text-align: center;
+				color: #858585;
+			}
+		}
+	}
+}
+.image-holder {
+	text-align: center;
+	img {
+		max-width: 100%;
+	}
+}
+.rvr_block {
+	line-height: 17px;
+	font-size: 14px;
+	color: #000;
+}
+.rvr_bordered {
+	padding-bottom: 35px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid #eee;
+}
+.rvr_founders_description {
+	font-size: 14px;
+	line-height: 17px;
+	color: #000;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 2px solid #eee;
+	.team {
+		margin-bottom: 35px;
+	}
+	.image-holder {
+		img {
+			text-align: center;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+}
+.mt35 {
+	margin-top: 35px;
+}
+.rvr_infographics {
+	margin-bottom: 115px;
+	margin-top: 50px;
+}
+.rvr_history_missions {
+	.rvr_mini-title {
+		font-size: 19px;
+		margin-bottom: 35px;
+	}
+}
+.rvr_prems {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5px;
+	.single {
+		margin-bottom: 30px;
+		text-align: center;
+		padding-top: 70px;
+		position: relative;
+		font-size: 13px;
+		width: 50%;
+		&:before {
+			content: "";
+			background: url('../../images/sprite.png') 0 0 no-repeat;
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+		}
+		&.service {
+			&:before {
+				width: 51px;
+				height: 51px;
+				background-position: -32px -5px;
+			}
+		}
+		&.specialists {
+			&:before {
+				width: 49px;
+				height: 51px;
+				background-position: -94px -2px;
+			}
+		}
+		&.partners {
+			&:before {
+				width: 51px;
+				height: 51px;
+				background-position: -34px -62px;
+			}
+		}
+		&.production {
+			&:before {
+				width: 51px;
+				height: 51px;
+				background-position: -95px -59px;
+			}
+		}
+	}
+}

@@ -1,36 +1,36 @@
 //mfp zoom
 /* overlay at start */
 .mfp-fade.mfp-bg {
-  opacity: 0;
+	opacity: 0;
 
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
 }
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8;
+	opacity: 0.8;
 }
 /* overlay animate out */
 .mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0;
+	opacity: 0;
 }
 
 /* content at start */
 .mfp-fade.mfp-wrap .mfp-content {
-  opacity: 0;
+	opacity: 0;
 
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
 }
 /* content animate it */
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1;
+	opacity: 1;
 }
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0;
+	opacity: 0;
 }
 
 .rvr_certificates {
@@ -119,7 +119,7 @@
 			.icon-instagram {
 				position: relative;
 				top: -1px;
-			    margin-right: 2px;
+				margin-right: 2px;
 			}
 		}
 	}
@@ -213,7 +213,7 @@
 	font-weight: bold;
 	font-size: 14px;
 	margin-bottom: 15px;
-    line-height: 14px;
+	line-height: 14px;
 }
 
 .rvr_info_links {
@@ -314,7 +314,6 @@
 
 .rvr_work_with {
 	padding-bottom: 35px;
-	border-bottom: 2px solid #eee;
 	.rvr_mini-title {
 		text-transform: uppercase;
 		margin: 50px 0;
@@ -324,6 +323,49 @@
 		columns: 4;
 		li {
 			margin-bottom: 35px;
+		}
+	}
+}
+
+.rvr_ask {
+	text-align: center;
+	margin-top: 35px;
+	p {
+		font-size: 14px;
+	}
+	.lnk-btn {
+		display: inline-block;
+		border-bottom: none;
+		text-decoration: underline;
+	}
+	.phones {
+		margin: 0 0 10px 0;
+		padding: 0;
+		li {
+			display: inline-block;
+			list-style-type: none;
+			&:nth-child(2) {
+				margin: 0 25px;
+			}
+			a {
+				display: inline-block;
+				color: #000;
+				border-bottom: none;
+				font-size: 18px;
+				padding-left: 40px;
+				position: relative;
+				&:before {
+					content: "";
+					display: block;
+					position: absolute;
+					width: 15px;
+					height: 15px;
+					background: url("../../images/sprite.png") -4px -96px no-repeat;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
 		}
 	}
 }

@@ -596,10 +596,6 @@
 }
 
 .rvr_form_row {
-
-}
-
-.rvr_form_row {
 	margin-top: 70px;
 	background: url('../../images/form_bg.png') right no-repeat;
     background-size: contain;
@@ -610,18 +606,440 @@
 			line-height: 23px;
 			margin-bottom: 20px;
 		}
-		.rvr_form {
-			text-align: center;
-			button {
-				color: #000;
+	}
+}
+.rvr_form {
+	text-align: center;
+	button {
+		color: #000;
+	}
+	input, textarea {
+		display: block;
+		margin-bottom: 20px;
+		&::-webkit-input-placeholder {
+			text-transform: none;
+		}
+	}
+	textarea {
+		min-height: 80px;
+	}
+}
+
+
+.rvr_return_description {
+	display: flex;
+	align-items: flex-start;
+	.image-holder {
+		flex: 0 0 auto;
+		margin-right: 20px;
+	}
+}
+
+.rvr_message {
+	display: block;
+	color: #000;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 17px;
+	background: #f2f2f2;
+	margin: 30px 0;
+	i {
+		font-style: italic;
+	}
+}
+.rvr_non_return {
+	.rvr_mini-title {
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+}
+.rvr_non_return_items {
+	display: flex;
+	flex-wrap: wrap;
+	.item {
+		text-align: center;
+		width: 33.33%;
+		margin-bottom: 35px;
+		padding-top: 80px;
+		position: relative;
+		font-size: 13px;
+		line-height: 19px;
+		color: #000;
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+			background: url('../../images/sprite.png') 0 0 no-repeat;
+		}
+		&.underwaer {
+			&:before {
+				width: 60px;
+				height: 50px;
+				background-position: 0px -148px;
 			}
-			input, textarea {
+		}
+		&.discount {
+			&:before {
+				width: 63px;
+				height: 48px;
+				background-position: 0px -198px;
+			}
+		}
+		&.individual {
+			&:before {
+				width: 64px;
+				height: 55px;
+				background-position: 0px -250px;
+			}
+		}
+		&.top {
+			&:before {
+				width: 51px;
+				height: 56px;
+				background-position: 0px -305px;
+			}
+		}
+		&.large_size {
+			&:before {
+				width: 49px;
+				height: 52px;
+				background-position: 0px -361px;
+			}
+		}
+		&.returned {
+			&:before {
+				width: 58px;
+				height: 47px;
+				background-position: 0 -413px;
+			}
+		}	
+	}
+}
+
+.rvr_procedure_return {
+	.rvr_mini-title {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			list-style-type: none;
+			display: block;
+			font-size: 14px;
+			line-height: 17px;
+			margin-bottom: 10px;
+			position: relative;
+			color: #000;
+			&:after {
+				content: "";
+				display: inline-block;
+				width: 12px;
+				height: 8px;
+				margin-left: 15px;
+				background: url("../../images/sprite.png") -105px -122px no-repeat;
+			}
+		}
+	}
+}
+
+.rvr_supplier_info {
+	padding-bottom: 30px;
+	border-bottom: 2px solid #eee;
+	margin-bottom: 30px;
+	ul {
+		padding: 0 0 0 20px;
+		margin: 0;
+		li {
+			list-style-type: disc;
+			font-style: 14px;
+			line-height: 20px;
+			color: #000;
+		}
+	}
+}
+.rvr_row_with_image {
+	display: flex;
+	margin-bottom: 50px;
+	.image-holder {
+		flex: 0 0 auto;
+		margin-right: 20px;
+	}
+	&:nth-child(even) {
+		flex-direction: row-reverse;
+		.image-holder {
+			margin-right: 0;
+			margin-left: 20px;
+		}
+	}
+	.text {}
+}
+
+.rvr_we_purpose {
+	margin: 30px 0 60px;
+	.rvr_mini-title {
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.rvr_purpose_item {
+		display: flex;
+		.item {
+			text-align: center;
+			width: 33.3%;
+			padding-top: 115px;
+			position: relative;
+			font-size: 13px;
+			line-height: 19px;
+			&:before {
+				content: "";
 				display: block;
-				margin-bottom: 20px;
-				&::-webkit-input-placeholder {
-					text-transform: none;
+				width: 84px;
+				height: 84px;
+				background: url("../../images/sprite.png") 0 0 no-repeat;
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX(-50%);
+			}
+			&.cooperation {
+				&:before {
+					background-position: -75px -156px;
 				}
 			}
+			&.buyers {
+				&:before {
+					background-position: -75px -240px;
+				}
+			}
+			&.marketing {
+				&:before {
+					background-position: -75px -324px;
+				}
+			}
+		}
+	}
+}
+
+.rvr_supplier_page {
+	.rvr_form {
+		margin: 30px auto;
+		width: 410px;
+	}
+}
+
+.rvr_warranty_items {
+	.item {
+		display: flex;
+		width: 100%;
+		background-color: #fcfcfc;
+		padding: 10px;
+		box-sizing: border-box;
+		margin-bottom: 30px;
+		border: 1px solid #dddddd;
+		border-radius: 3px;
+		.img_holder {
+			flex: 0 0 auto;
+			margin-right: 30px;
+			position: relative;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: -5px;
+				right: -5px;
+				background: url("../../images/sprite.png") 0 0 no-repeat;
+				width: 46px;
+				height: 39px;
+			}
+			&.guarantee {
+				&:before {
+					background-position: -146px 0px;
+				}
+			}
+			&.assurance {
+				&:before {
+					background-position: -146px -39px;
+				}
+			}
+			&.ssl {
+				&:before {
+					background-position: -192px 0px;
+				}
+			}
+			&.full_packet {
+				&:before {
+					background-position: -192px -39px;
+				}
+			}
+			&.confidencial {
+				&:before {
+					background-position: -238px 0px;
+				}
+			}
+		}
+		.rvr_warranty_title {
+			color: #d2a348;
+			text-transform: uppercase;
+			font-weight: 500;
+			margin-bottom: 12px;
+			font-size: 14px;
+		}
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+			margin-right: 0;
+			text-align: right;
+			.img_holder {
+				margin-left: 30px;
+				margin-right: 0;
+				&:before {
+					right: auto;
+					left: -5px;
+				}
+			}
+		}
+	} 
+}
+
+.rvr_vacations_page {
+	.company_description {
+		margin-bottom: 35px;
+	}
+	.rvr_smi {
+		margin-bottom: 20px;
+		img {
+			display: block;
+			margin-bottom: 3px;
+		}
+		a {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+}
+.rvr_number_list {
+	margin-top: 30px;
+	.item {
+		font-weight: bold;
+		font-size: 15px;
+		display: flex;
+		color: #000;
+		margin-bottom: 10px;
+		span {
+			display: flex;
+			width: 25px;
+			height: 25px;
+			align-items: center;
+			justify-content: center;
+			font-size: 15px;
+			color: #cc9d46;
+			border: 1px solid #cc9d46;
+			border-radius: 50px;
+			margin-right: 15px;
+		}
+	}
+}
+
+.rvr_vacations_list {
+	.item {
+		display: block;
+		box-sizing: border-box;
+		padding: 10px;
+		background: #f2f2f2;
+		margin-bottom: 15px;
+		.name {
+			font-size: 18px;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		a {
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+}
+
+.contact-item {
+	padding: 10px 0;
+	border-bottom: 1px dashed #e9e9e9;
+	&:first-child {
+		padding-top: 0;
+	}
+	&.card {
+		display: flex;
+		align-items: center;
+		.photo {
+			margin-right: 10px;
+		}
+		.card-info {
+			font-size: 14px;
+			line-height: 20px;
+			.name {
+				color: #000;
+			}
+			.d {
+				color: #848484;
+			}
+		}
+	}
+}
+.video_holder {
+	text-align: center;
+}
+.rvr_blockquote {
+	max-width: 700px;
+	margin: 30px auto;
+	padding: 40px 60px;
+	position: relative;
+	background: #f6f6f6;
+	border: none;
+	&:before {
+		position: absolute;
+		content: "";
+		left: 20px;
+		top: 20px;
+		width: 32px;
+		height: 22px;
+		background: url("../../images/sprite.png") -249px -50px no-repeat;
+	}
+	p {
+		font-style: italic;
+		font-weight: 100;
+		padding-bottom: 20px;
+		font-size: 13px;
+		line-height: 18px;
+	}
+	footer {
+		text-align: right;
+	}
+}
+
+.rvr_line_list {
+	margin: 70px 0;
+	li {
+		padding-left: 40px;
+		list-style-type: none;
+		display: block;
+		margin-bottom: 15px;
+		font-size: 14px;
+		line-height: 18px;
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 1px;
+			background: #000;
+			position: absolute;
+			left: 0;
+			top: 10px;
 		}
 	}
 }

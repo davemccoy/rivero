@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<base href="" />
-	<title>Контакты</title>
+	<title>История</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="MobileOptimized" content="320">
@@ -323,7 +323,7 @@
 								</div>
 								<span class="header__call-phones">
 									<span itemprop="telephone" ><a href="tel:380970647111" rel="nofollow">+38 (097) 06-47-111</a></span>																		</span>
-									<a class="btn btn--transparent js-fancy-popup" href="../index.html#inline">Обратный звонок</a>
+									<a class="btn btn--transparent js-fancy-popup" href="#inline">Обратный звонок</a>
 									<div id="inline" style="display:none;">
 										<div>
 											<div class="popup-simple__inner">
@@ -513,186 +513,72 @@
 					<input type="hidden" id="url" value=''>
 					<div class="clearfix"></div>
 					<div class="row">
-						<div class="col-md-3">
-							<div class="catalogue-filter">
-								<div class="price">
-									<script>
-										$( function() {
-											$('.catalogue-slider').slider({
-												range: true,
-												min: 850,
-												max: 12490,
-												values: [ 850, 12490 ],
-												stop: function(event, ui) {
-													$('.minCost').val($('.catalogue-slider').slider('values',0));
-													$('.maxCost').val($('.catalogue-slider').slider('values',1));
-												},
-												slide: function(event, ui){
-													$('.minCost').val($('.catalogue-slider').slider('values',0));
-													$('.maxCost').val($('.catalogue-slider').slider('values',1));
-												}
-											});
-										});
-									</script>
-									<h3>Цена</h3>
-									<div class="catalogue-slider"></div>
-									<div class="fields">
-										<span>от</span>
-										<input type="text" class="minCost" value="850 грн">
-										<span>до</span>
-										<input type="text" class="maxCost" value="12490 грн">
-									</div>
-								</div>
-								<div class="color">
-									<h3>Цвет</h3>
-									<div class="fields">
-										<input type="checkbox">
-										<div class="checkbox"></div>
-										<span>Белый</span>
-									</div>
-								</div>
-								<div class="btns">
-									<button type="submit" class="btn submit">Показать</button>
-									<a href="../index.html" class="btn reset">Сбросить</a>
-								</div>
-								<div class="size">
-									<h3>Укажите свой размер</h3>
-									<div class="fields">
-										<label>
-											<span class="name">1. Обхват груди:</span>
-											<input type="text" name="size1">см
-										</label>
-										<label>
-											<span class="name">2. Обхват талии:</span>
-											<input type="text" name="size1">см
-										</label>
-										<label>
-											<span class="name">3. Обхват бёдер:</span>
-											<input type="text" name="size1">см
-										</label>
-									</div>
-								</div>
-								<div class="result">
-									<h3>Результат замеров</h3>
-									<div class="fields">
-										<span>Ваш размер:</span>
-										<span class="numb">2XL (52)</span>
-									</div>
-								</div>
-							</div>
-							<div class="catalogue-menu">
-								<ul class="list">
-									<li><a href="index.html"><img src="../image/catalog/cats/cat1.png" alt="Джинсы">Джинсы</a></li>
-									<li><a href="../kofty/index.html"><img src="../image/catalog/cats/cat2.png" alt="Кофты">Кофты</a></li>
-									<li><a href="../kurtki-palto/index.html"><img src="../image/catalog/cats/cat3.png" alt="Куртки, пальто">Куртки, пальто</a></li>
-									<li><a href="../losiny-leginsi/index.html"><img src="../image/catalog/cats/cat4.png" alt="Лосины и легинсы">Лосины и легинсы</a></li>
-									<li><a href="../nizhnee-beliyo/index.html"><img src="../image/catalog/cats/cat5.png" alt="Нижнее бельё">Нижнее бельё</a>
-									</li>
-									<li><a href="../perchatki/index.html"><img src="../image/catalog/cats/cat6.png" alt="Перчатки, рукавицы">Перчатки, рукавицы</a></li>
-									<li><a href="../pidzhaki-zhileti/index.html"><img src="../image/catalog/cats/cat7.png" alt="Пиджаки, жилеты">Пиджаки, жилеты</a></li>
-									<li><a href="../rubashki/index.html"><img src="../image/catalog/cats/cat8.png" alt="Рубашки">Рубашки</a></li>
-									<li><a href="../futbolki-mayki/index.html"><img src="../image/catalog/cats/cat9.png" alt="Футболки, майки">Футболки, майки</a></li>
-									<li><a href="../chulki-kolgotki/index.html"><img src="../image/catalog/cats/cat10.png" alt="Чулки, колготки">Чулки, колготки</a></li>
-									<li><a href="../sharfy-shapki/index.html"><img src="../image/catalog/cats/cat11.png" alt="Шарфы, шапки">Шарфы, шапки</a></li>
-									<li><a href="../shorty/index.html"><img src="../image/catalog/cats/cat12.png" alt="Шорты">Шорты</a></li>
-									<li><a href="../yubki/index.html"><img src="../image/catalog/cats/cat13.png" alt="Юбки">Юбки</a></li>
-									<li><a href="../platya/index.html"><img src="../image/catalog/cats/cat14.png" alt="Платья">Платья</a>
-									</li>
-									<li><a href="../kupalniki/index.html"><img src="../image/catalog/cats/cat15.png" alt="Купальники">Купальники</a>
-									</li>
-									<li><a href="../bruki/index.html"><img src="../image/catalog/cats/cat16.png" alt="Брюки">Брюки</a></li>
-									<li><a href="../kostumy/index.html"><img src="../image/catalog/cats/cat17.png" alt="Костюмы">Костюмы</a></li>
-								</ul>
-							</div>
-							<div class="catalogue-menu2">
-								<ul>
-									<li><a href="../index.html"><img src="../image/catalog/cats2/cat1.png" alt="Наша марка">Наша марка</a></li>
-									<li><a href="../index.html"><img src="../image/catalog/cats2/cat2.png" alt="Арт-салон">Арт-салон</a></li>
-									<li><a href="../index.html"><img src="../image/catalog/cats2/cat3.png" alt="Новинки">Новинки</a></li>
-									<li><a href="../index.html"><img src="../image/catalog/cats2/cat4.png" alt="Снова в продаже">Снова в продаже</a></li>
-									<li><a href="../index.html"><img src="../image/catalog/cats2/cat5.png" alt="Распродажа">Распродажа</a></li>
-									<li><a href="../index.html"><img src="../image/catalog/cats2/cat6.png" alt="Уценка">Уценка</a></li>
-									<li><a href="../index.html"><img src="../image/catalog/cats2/cat7.png" alt="Фкции">Фкции</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-9 rvr_contacts_page">
+						<div class="col-md-12">
 							<h1 class="categories__title">
-								Контакты
+								История
 							</h1>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="rvr_contacts_item phones">
-										<div class="title">
-											ГОРЯЧАЯ ЛИНИЯ РИВЕРО
-										</div>
-										<div class="info">(Будни с 9:00 до 20:00)</div>
-										<div class="rvr_phones-list">
-											<a href="tel: 8 (800) 505 62 73" class="selected">8 (800) 505 62 73 - Бесплатно для звонков по РФ</a> <br>
-											<a href="tel: (097) 917 91 31">(097) 917 91 31</a> <br>
-											<a href="tel: (066) 039 40 25">(066) 039 40 25</a> <br>
-											<a href="tel: (093) 007 38 07">(093) 007 38 07</a>
-										</div>
-									</div>
-
-									<div class="rvr_contacts_item mail">
-										<div class="title">
-											КОНТАКТНЫЙ E-MAIL
-										</div>
-										<a href="mailto: info@rivero.com.ua">info@rivero.com.ua</a>
-										<div class="text">
-											Заказы через сайт - 24/7
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="rvr_contacts_item map">
-										<div class="title">
-											АДРЕС ОФИСА
-										</div>
-										<div class="info">
-											(Для самовывоза и возврата/рекламаций товаров)
-										</div>
-										<div class="text">
-											Москва, ул. Маршала Полубоярова, 82 <br>
-											(ст. метро Жублено)
-										</div>
-										<div class="text">
-											Юридическая информация
-										</div>
-										<div class="text">
-											ОГРН 321511225444455 ИНН 7752245562255 <br>
-											Юридический адрес <br>
-											107031, г. Москва, Нижний Кисельный перд., д.3 <br>
-											Индивидуальный предприниматель <br>
-											Ащин Илья Евгентевич
-										</div>
-									</div>
-								</div>
-								<div class="clearfix"></div>
+							<div class="video_holder">
+								<iframe width="700" height="400" src="https://www.youtube.com/embed/fBvGQwU1p2o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
-							<div class="row rvr_form_row">
+							<blockquote class="rvr_blockquote rvr_block">
+								<p>Мы отлично ориентируемся в fashion-рынке Украины: наши закупщики отлично знают модные тренды, вкусы и потребности украинских покупательниц и, самое главное, умеют обеспечить самую низкую цену на рынке!</p>
+								<p>Ежедневно, только для вас, предлагаем до 20 акций с товарами мировых брендов и украинских производителей со скидками от 20 до 80%.И нам, как и вам, это очень нравится!</p>
+								<footer>Rivero - бутик пышной моды</footer>
+							</blockquote>
+
+							<ul class="rvr_line_list">
+								<li>
+									Мы отлично ориентируемся в fashion-рынке Украины: наши закупщики отлично знают модные тренды, вкусы  и потребности украинских покупательниц и, 
+									самое главное, умеют обеспечить самую низкую цену на рынке!
+								</li>
+								<li>Ежедневно, только для вас, предлагаем до 20 акций с товарами мировых брендов и украинских производителей со скидками от 20 до 80%.И нам это очень нравится!</li>
+
+								<li>Мы отлично ориентируемся в fashion-рынке Украины: наши закупщики отлично знают модные тренды, вкусы  и потребности украинских покупательниц и, 
+								самое главное, умеют обеспечить самую низкую цену на рынке!</li>
+
+								<li>Ежедневно, только для вас, предлагаем до 20 акций с товарами мировых брендов и украинских производителей со скидками от 20 до 80%.И нам это очень нравится!</li>
+
+								<li>Мы отлично ориентируемся в fashion-рынке Украины: наши закупщики отлично знают модные тренды, вкусы  и потребности украинских покупательниц и, 
+								самое главное, умеют обеспечить самую низкую цену на рынке!</li>
+
+								<li>Ежедневно, только для вас, предлагаем до 20 акций с товарами мировых брендов и украинских производителей со скидками от 20 до 80%.И нам это очень нравится!</li>
+
+								<li>Мы отлично ориентируемся в fashion-рынке Украины: наши закупщики отлично знают модные тренды, вкусы  и потребности украинских покупательниц и, 
+								самое главное, умеют обеспечить самую низкую цену на рынке!</li>
+
+								<li>Ежедневно, только для вас, предлагаем до 20 акций с товарами мировых брендов и украинских производителей со скидками от 20 до 80%.И нам это очень нравится!</li>
+							</ul>
+
+
+							<div class="rvr_infographics">
+								<div class="img-holder">
+									<img src="images/info.png" alt="">
+								</div>	
+							</div>
+							
+
+							<div class="rvr_block row rvr_history_missions">
 								<div class="col-md-6">
-									<div class="rvr_form_block">
-										<div class="rvr_form_title">
-											Заполните форму ниже и наш менеджер свяжется
-											с Вами и поможет с любым вопросом
+									<h2 class="rvr_mini-title">История компании</h2>
+									<div class="rvr_block_history">
+										<p>Мы делаем все для того, чтобы ваш опыт онлайн-шопинга был максимально приятным, и разработали максимально простую и удобную процедуру возврата. Чтобы оформить возврат, нужно сделать 3 шага.</p>
+										<p>Указать количество возвращаемого товара в столбце «Количество» и код с причиной возврата в столбце «Причина». Коды причин возврата указаны в накладной. Упаковать возвращаемый товар и вложить в упаковку товарную накладную, пломбы, ярлыки и этикетки, которые относятся к товару.</p>
+										<p>Вернуть его любым удобным для вас способом. Коды причин возврата указаны в накладной. Упаковать возвращаемый товар и вложить в упаковку товарную накладную, пломбы, ярлыки и этикетки, которые относятся к товару. Чтобы оформить возврат, нужно сделать 3 шага.</p>
+									</div>
+									<!-- /.rvr_block_history -->
+								</div>
+								<div class="col-md-6">
+									<div class="rvr_block rvr_mission">
+										<p><b>Миссия компании</b> - Мы делаем все для того, чтобы ваш опыт онлайн-шопинга был максимально приятным, и разработали максимально простую и удобную процедуру возврата. Чтобы оформить возврат, нужно сделать 3 шага.</p>
+
+										<div class="rvr_prems">
+											<div class="single service">Высокий сервис</div>
+											<div class="single specialists">Опытные специалисты</div>
+											<div class="single partners">Надежные партнеры</div>
+											<div class="single production">Качественная продукция</div>
 										</div>
-										<form class="rvr_form">
-											<input type="text" name="name" placeholder="Имя*">
-											<input type="text" name="phone" placeholder="Телефон*">
-											<textarea placeholder="Комментарий" name="comment"></textarea>
-											<button>Отправить</button>
-										</form>
 									</div>
 								</div>
-								<div class="clearfix"></div>
-							</div> <!-- ./rvr_form_row -->
-							<div class="row">
-								<div class="col-md-12">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.298215471302!2d37.860928315927886!3d55.683802880534905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab613baef30a7%3A0x51c7d3435d46a93c!2z0YPQuy4g0JzQsNGA0YjQsNC70LAg0J_QvtC70YPQsdC-0Y_RgNC-0LLQsCwgODIsINCb0Y7QsdC10YDRhtGLLCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDEwOTE1Ng!5e0!3m2!1sru!2sua!4v1545482620636" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</div>
-								<div class="clearfix"></div>
 							</div>
 						</div>
 					</div>

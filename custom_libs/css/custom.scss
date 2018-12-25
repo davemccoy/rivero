@@ -1,5 +1,11 @@
 @import "break";
 
+.fancybox-enabled {
+	overflow: hidden;
+	body {
+		overflow: hidden;
+	}
+}
 //mfp zoom
 /* overlay at start */
 .mfp-fade.mfp-bg {
@@ -1167,6 +1173,246 @@
 			position: absolute;
 			left: 0;
 			top: 10px;
+		}
+	}
+}
+
+.rvr_popup {
+	margin: 20px !important;
+	.popup-simple__inner {
+		text-align: left;
+	}
+	.popup-simple__close {
+		background: none;
+		left: 100%;
+		margin: 0 0 0 -50px;
+		top: 0;
+	}
+	.rvr-title {
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 14px;
+		color: #000000;
+		margin-bottom: 15px;
+		text-align: center;
+	}
+	.rvr_subtitle {
+		font-size: 14px;
+		color: #a6a6a6;
+		margin-bottom: 25px;
+	}
+	.rvr_size_form {
+		display: flex;
+		max-width: 100%;
+		margin-bottom: 25px;
+		input {
+			width: 24%;
+			margin-right: 1%;
+			padding: 0 10px;
+			line-height: 30px;
+			color: #cccccc;
+			border: 1px solid #ccc;
+			font-size: 13px;
+			font-weight: normal;
+			margin-bottom: 0;
+			&::-webkit-input-placeholder {
+				color: #cccccc;
+				font-weight: normal;
+			}
+		}
+		button {
+			font-size: 11px;
+			line-height: 30px;
+			padding: 0 10px;
+			display: block;
+			width: 25%;
+
+		}
+	}
+	.result {
+		display: flex;
+		align-items: center;
+		font-size: 13px;
+		color: #3d3d3d;
+		margin-bottom: 25px;
+		span {
+			display: inline-block;
+			margin-left: 15px;
+			background: #eeb021;
+			font-weight: bold;
+			color: #000;
+			font-size: 13px;
+			line-height: 30px;
+			padding: 0 7px;
+			border-radius: 3px;
+		}
+	}
+	.rvr_size_help {
+		padding-left: 30%;
+		background: url('../../images/size.png') left no-repeat;
+		text-align: left;
+		a {
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+	}
+	.rvr_popup_prems {
+		columns: 2;
+		margin-top: 45px;
+		margin-bottom: -30px;
+		padding-left: 15px;
+		.item {
+			position: relative;
+			padding-left: 50px;
+			margin-bottom: 45px;
+			page-break-inside: avoid;
+			&:before {
+				content: "";
+				display: block;
+				left: 0;
+				top: 0;
+				position: absolute;
+				background: url('../../images/sprite.png') 0 0 no-repeat;
+			}
+			&.product_quality {
+				&:before {
+					width: 31px;
+					height: 38px;
+					background-position: -155px -80px;
+				}
+			}
+			&.return_guarantee {
+				&:before {
+					width: 44px;
+					height: 35px;
+					left: -10px;
+					background-position: -194px -80px;
+				}
+			}
+			&.trends {
+				&:before {
+					width: 36px;
+					height: 42px;
+					background-position: -240px -79px;
+				}
+			}
+			&.testimonials {
+				&:before {
+					width: 38px;
+					height: 28px;
+					background-position: -171px -126px;
+				}
+			}
+			&.fitting {
+				&:before {
+					left: 5px;
+					width: 21px;
+					height: 39px;
+					background-position: -218px -126px;
+				}
+			}
+			&.professional_team {
+				&:before {
+					width: 36px;
+					height: 36px;
+					background-position: -248px -126px;
+				}
+			}
+			.title {
+				font-size: 20px;
+				font-weight: 500;
+				color: #d3a449;
+				line-height: 18px;
+			}
+			.text {
+				font-size: 13px;
+				line-height: 16px;
+				color: #4a4949;
+			}
+		}
+	}
+}
+.rvr_size_table {
+	table-layout: fixed;
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	text-align: center;
+	thead {
+		tr {
+			td {
+				color: #bababa;
+				font-size: 13px;
+				padding: 20px 10px;
+				width: 25%;
+			}
+		}
+	}
+	tbody {
+		tr {
+			&:nth-child(odd) {
+				background: #f8f8f8;
+			}
+			td {
+				font-size: 13px;
+				padding: 10px;
+				color: #000;
+			}
+		}
+	}
+}
+
+.rvr_consultation {
+	text-align: center;
+	.rvr_subtitle {
+		text-align: center;
+	}
+	form {
+		max-width: 280px;
+		text-align: center;
+		input {
+			margin-bottom: 30px;
+		}
+		button {
+			padding: 13px 20px;
+			display: inline-block;
+		}
+		.form-description {
+			font-size: 14px;
+			line-height: 18px;
+			color: #a6a6a6;
+			margin-top: 25px;
+		}
+	}
+}
+
+.rvr_popup_size_table {
+	table-layout: fixed;
+	thead {
+		tr {
+			background-color: #eeb021;
+			td {
+				color: #fff;
+				font-weight: bold;
+				font-size: 13px;
+				line-height: 18px;
+				padding: 10px;
+				width: 25%;
+				text-align-last: auto;
+			}
+		}
+	}
+	tbody {
+		tr {
+			&:hover {
+				background-color: #ffe9b5;
+			}
+			td {
+				font-size: 13px;
+				line-height: 18px;
+				text-align: left;
+				width: 25%;
+				padding: 10px;
+			}
 		}
 	}
 }

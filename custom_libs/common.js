@@ -25,4 +25,8 @@ $(document).ready(function() {
 		}
 		return false;
 	});
+
+	if ($(window).width() < 1023) {
+		$('table').wrap('<div class="table_wrap"></div>')
+	}
 })
